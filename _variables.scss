@@ -1,0 +1,16 @@
+html
+body{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$colors: {
+    Pink: #ffcdd2
+    white: #fff,
+    blue: #bbdefb
+    black: #000,
+};
+@function color($colors-name) {
+    @return map-get($colors,$color-name);
+}
